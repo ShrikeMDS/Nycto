@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_doorBase",
+  "name": "obj_playerHitBox",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -24,8 +24,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": false,
-  "spriteId": null,
+  "solid": true,
+  "spriteId": {
+    "name": "spr_playerHitBox",
+    "path": "sprites/spr_playerHitBox/spr_playerHitBox.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

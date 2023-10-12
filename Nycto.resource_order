@@ -1,0 +1,10 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_playerHitBox","order":3,"path":"objects/obj_playerHitBox/obj_playerHitBox.yy",},
+    {"name":"spr_playerMon","order":1,"path":"sprites/spr_playerMon/spr_playerMon.yy",},
+    {"name":"obj_controller","order":1,"path":"objects/obj_controller/obj_controller.yy",},
+    {"name":"obj_doorBase","order":2,"path":"objects/obj_doorBase/obj_doorBase.yy",},
+    {"name":"spr_playerHitBox","order":2,"path":"sprites/spr_playerHitBox/spr_playerHitBox.yy",},
+  ],
+}
