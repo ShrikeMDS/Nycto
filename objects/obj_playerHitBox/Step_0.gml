@@ -18,8 +18,8 @@ if (global.debugMode)
 if (!place_meeting(x + obj_playerChar.hspd, y, obj_wallBase))
 {
     obj_playerChar.x += obj_playerChar.hspd;
-}
+} else {show_debug_message("X Collision")}
 if (!place_meeting(x, y + obj_playerChar.vspd, obj_wallBase))
 {
 	obj_playerChar.y += obj_playerChar.vspd;
-}
+} else {show_debug_message("Y Collision")}

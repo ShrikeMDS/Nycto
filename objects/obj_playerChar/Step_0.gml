@@ -4,13 +4,13 @@
 // Check if any movement keys are pressed
 if (keyboard_check(ord("A")) || keyboard_check(ord("D")) || keyboard_check(ord("W")) || keyboard_check(ord("S"))) {
     is_moving = true; // Player is moving
-    current_frame += 0.2; // Move to the next frame
+    current_frame += 0.1; // Move to the next frame
     if (current_frame >= max_frame) {
-        current_frame = 0; // Reset to the first frame if we reach the maximum frame
+        current_frame = min_frame; // Reset to the first frame if we reach the maximum frame
     }
 } else {
     is_moving = false; // adaPlayer is not moving
-    current_frame = 0; // Reset to the first frame when not moving
+    current_frame = min_frame; // Reset to the first frame when not moving
 }
 
 // Slow down
@@ -22,8 +22,21 @@ if (vspd < 0) vspd += 0.3;
 // For Player Collision Check obj_playerHitBox
 
 // Movement Keybinds
-if keyboard_check(ord("A")) hspd = -3;
-if keyboard_check(ord("D")) hspd = 3;
+if keyboard_check(ord("A")) 
+{
+	hspd = -3;
+	min_frame = 0;
+	max_frame = 2;
+	
+}
+if keyboard_check_pressed(ord("A")) current_frame = min_frame;
+if keyboard_check(ord("D")) 
+{
+	hspd = 3; 
+	min_frame = 2;
+	max_frame = 4;
+}
+if keyboard_check_pressed(ord("D")) current_frame = min_frame;
 if keyboard_check(ord("W")) vspd = -3;
 if keyboard_check(ord("S")) vspd = 3;
 
