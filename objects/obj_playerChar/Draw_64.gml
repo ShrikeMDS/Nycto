@@ -1,0 +1,15 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+if (global.debugMode)
+{
+	// Debug Font Setup
+	draw_set_colour(c_lime);
+	draw_set_font(fnt_debug);
+	
+	// Time Left
+	draw_text(90, 10, timeLeft);
+	draw_text(10, 10, "Time Left:");
+}
+
+
