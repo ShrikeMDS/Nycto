@@ -1,9 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_doorBase",
-  "spriteId": null,
-  "solid": false,
+  "name": "obj_floor_Dark",
+  "spriteId": {
+    "name": "spr_floor_dark",
+    "path": "sprites/spr_floor_dark/spr_floor_dark.yy",
+  },
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -21,7 +24,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

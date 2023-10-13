@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_floorBase",
+  "name": "obj_buttonOptions",
   "spriteId": {
-    "name": "spr_floor",
-    "path": "sprites/spr_floor/spr_floor.yy",
+    "name": "spr_buttonOptions",
+    "path": "sprites/spr_buttonOptions/spr_buttonOptions.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -25,13 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Room Objects",
-    "path": "folders/Objects/Room Objects.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Buttons.yy",
   },
 }

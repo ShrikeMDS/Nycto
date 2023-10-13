@@ -16,3 +16,7 @@ vspd = 0;
 
 //                 Key 1, Key 2, Key 3, Key 4
 playerInventory = [false, false, false, false];
+
+spawnPosX = x;
+spawnPosY = y;
+

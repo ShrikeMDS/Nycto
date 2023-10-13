@@ -64,5 +64,13 @@ if keyboard_check_pressed(ord("E"))
 if (shiftStatus && timeLeft != 0)
 {
 	timeLeft--
-	show_debug_message(timeLeft)
+	if (timeLeft/60 == round(timeLeft/60))
+	{
+		show_debug_message(timeLeft/60)
+	}
+}
+
+if (room == rm_level1)
+{
+	camera_set_view_pos(view_camera[0], x - (384/2) , y - (216/2))
 }

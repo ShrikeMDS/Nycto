@@ -8,8 +8,16 @@ if (global.debugMode)
 	draw_set_font(fnt_debug);
 	
 	// Time Left
-	draw_text(90, 10, timeLeft);
+	draw_text(90, 10, timeLeft/60);
 	draw_text(10, 10, "Time Left:");
+	draw_text(90, 30, playerInventory[0]);
+	draw_text(10, 30, "Key 1:");
+	draw_text(90, 50, playerInventory[1]);
+	draw_text(10, 50, "Key 2:");
+	draw_text(90, 70, playerInventory[2]);
+	draw_text(10, 70, "Key 3:");
+	draw_text(90, 70, playerInventory[3]);
+	draw_text(10, 70, "Key 4:");
 }
 
 

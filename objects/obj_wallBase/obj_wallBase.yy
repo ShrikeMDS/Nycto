@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Room Objects",
-    "path": "folders/Objects/Room Objects.yy",
+    "name": "Walls",
+    "path": "folders/Objects/Room Objects/Walls.yy",
   },
 }
