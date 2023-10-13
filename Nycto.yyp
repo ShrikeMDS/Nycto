@@ -20,6 +20,7 @@
     {"id":{"name":"spr_buttonExit","path":"sprites/spr_buttonExit/spr_buttonExit.yy",},"order":2,},
     {"id":{"name":"spr_buttonOptions","path":"sprites/spr_buttonOptions/spr_buttonOptions.yy",},"order":0,},
     {"id":{"name":"spr_winTrigger","path":"sprites/spr_winTrigger/spr_winTrigger.yy",},"order":4,},
+    {"id":{"name":"obj_buttonExit","path":"objects/obj_buttonExit/obj_buttonExit.yy",},"order":4,},
     {"id":{"name":"obj_keyBase","path":"objects/obj_keyBase/obj_keyBase.yy",},"order":10,},
     {"id":{"name":"spr_wallHitbox","path":"sprites/spr_wallHitbox/spr_wallHitbox.yy",},"order":0,},
     {"id":{"name":"obj_playerHitBox","path":"objects/obj_playerHitBox/obj_playerHitBox.yy",},"order":2,},
