@@ -60,6 +60,17 @@ if (!Vcolliding) // Y
 	obj_playerChar.y += obj_playerChar.vspd;
 } else {show_debug_message("Y Collision")}
 
-// Set to player Location
-x = obj_playerChar.x;
-y = obj_playerChar.y;
+if (obj_playerChar.shiftStatus)
+{
+	image_xscale = 1.5;
+	image_yscale = 1.5;
+	// Set to player Location
+	x = obj_playerChar.x;
+	y = obj_playerChar.y-48;
+} else {
+	image_xscale = 1;
+	image_yscale = 1;	
+	// Set to player Location
+	x = obj_playerChar.x;
+	y = obj_playerChar.y-32;
+}

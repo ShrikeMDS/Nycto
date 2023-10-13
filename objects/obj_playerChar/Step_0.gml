@@ -22,23 +22,26 @@ if (vspd < 0) vspd += 0.3;
 // For Player Collision Check obj_playerHitBox
 
 // Movement Keybinds
+min_frame = 0;
+max_frame = 0;
 if keyboard_check(ord("A")) 
 {
 	hspd = -3;
-	min_frame = 0;
-	max_frame = 2;
+	min_frame = 1;
+	max_frame = 3;
 	
 }
-if keyboard_check_pressed(ord("A")) current_frame = min_frame;
 if keyboard_check(ord("D")) 
 {
 	hspd = 3; 
-	min_frame = 2;
-	max_frame = 4;
+	min_frame = 3;
+	max_frame = 5;
 }
-if keyboard_check_pressed(ord("D")) current_frame = min_frame;
 if keyboard_check(ord("W")) vspd = -3;
-if keyboard_check(ord("S")) vspd = 3;
+if keyboard_check(ord("S")) vspd = 3
+
+if keyboard_check_pressed(ord("A")) current_frame = min_frame;;
+if keyboard_check_pressed(ord("D")) current_frame = min_frame;
 
 // Swap Status
 if keyboard_check_pressed(vk_space) && shiftStatus
@@ -70,7 +73,3 @@ if (shiftStatus && timeLeft != 0)
 	}
 }
 
-if (room == rm_level1)
-{
-	camera_set_view_pos(view_camera[0], x - (384/2) , y - (216/2))
-}
