@@ -1,66 +1,110 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description - Main Player Step
 // Check if any movement keys are pressed
-if (keyboard_check(ord("A")) || keyboard_check(ord("D")) || keyboard_check(ord("W")) || keyboard_check(ord("S"))) {
-    is_moving = true; // Player is moving
-    current_frame += 0.1; // Move to the next frame
-    if (current_frame >= max_frame) {
-        current_frame = min_frame; // Reset to the first frame if we reach the maximum frame
-    }
-} else {
-    is_moving = false; // adaPlayer is not moving
-    current_frame = min_frame; // Reset to the first frame when not moving
+ 
+
+///////////////////////
+// Animation System
+///////////////////////
+current_frame += 0.09; // Move to the next frame
+if (current_frame >= max_frame) 
+{
+    current_frame = min_frame; // Reset to the first frame if we reach the maximum frame
+};
+if (current_frame < min_frame)
+{
+	current_frame = min_frame
+};
+	
+if keyboard_check(ord("W")) // Walk up
+{
+	plyDir = 0 + 4;
+	min_frame = animStates[plyDir][0];
+	max_frame = animStates[plyDir][1];
+}
+else if keyboard_check(ord("A")) // Walk Left
+{
+	plyDir = 1 + 4;
+	min_frame = animStates[plyDir][0];
+	max_frame = animStates[plyDir][1];
 }
 
+else if keyboard_check(ord("D")) // Walk Right
+{
+	plyDir = 2 + 4;
+	min_frame = animStates[plyDir][0];
+	max_frame = animStates[plyDir][1];
+}
+else if keyboard_check(ord("S")) // Walk Down
+{
+	plyDir = 3 + 4;
+	min_frame = animStates[plyDir][0];
+	max_frame = animStates[plyDir][1];
+} 
+else
+{
+	if (plyDir >= 4)
+	{
+		plyDir -= 4;
+	}
+	min_frame = animStates[plyDir][0];
+	max_frame = animStates[plyDir][1];
+}
+
+
+
+//////////////////////
+// Player Movement
+//////////////////////
 // Slow down
 if (hspd > 0) hspd -= 0.3;
 if (vspd > 0) vspd -= 0.3;
 if (hspd < 0) hspd += 0.3;
 if (vspd < 0) vspd += 0.3;
 
-// For Player Collision Check obj_playerHitBox
-
 // Movement Keybinds
-min_frame = 0;
-max_frame = 0;
-if keyboard_check(ord("A")) 
-{
-	hspd = -3;
-	min_frame = 1;
-	max_frame = 3;
-	
-}
-if keyboard_check(ord("D")) 
-{
-	hspd = 3; 
-	min_frame = 3;
-	max_frame = 5;
-}
 if keyboard_check(ord("W")) vspd = -3;
+if keyboard_check(ord("D")) hspd = 3; 
+if keyboard_check(ord("A")) hspd = -3;
 if keyboard_check(ord("S")) vspd = 3
 
-if keyboard_check_pressed(ord("A")) current_frame = min_frame;;
-if keyboard_check_pressed(ord("D")) current_frame = min_frame;
-
+//////////////////////
+// Player Actions
+//////////////////////
 // Swap Status
 if keyboard_check_pressed(vk_space) && shiftStatus
 {
+	shifting = true;
 	shiftStatus = false;
 	show_debug_message("Shift Status: False");
-	sprite_assign(spr_playerBase, spr_playerChar);
 }
 else if keyboard_check_pressed(vk_space) && !shiftStatus
 {
+	shifting = true;
 	shiftStatus = true;
 	show_debug_message("Shift Status: True");
-	sprite_assign(spr_playerBase, spr_playerMon);
 }
-
 // Interaction
 if keyboard_check_pressed(ord("E"))
 {
 	show_debug_message("Interact");
+}
+
+
+///////////////////////
+// Player Transform
+///////////////////////
+if (shifting && !shiftAnimTimer <= 0)
+{
+	min_frame = animStates[8][0];
+	max_frame = animStates[8][1];
+	shiftAnimTimer--;
+}
+if (shiftAnimTimer <=0)
+{
+	if (shiftStatus) sprite_assign(spr_playerBase, spr_playerMon);
+	if !(shiftStatus) sprite_assign(spr_playerBase, spr_playerChar);
+	shiftAnimTimer = 1*60;
+	shifting = false;
 }
 
 // Shift Timer
@@ -73,3 +117,31 @@ if (shiftStatus && timeLeft != 0)
 	}
 }
 
+if (timeLeft/60 <= 40 && sanityStage == 0)
+{
+	// Stage 1
+	// Slow Heart Beat
+	show_debug_message("Insanity: Stage 1")
+	sanityStage = 1;
+}
+if (timeLeft/60 <= 20 && sanityStage == 1)
+{
+	// Stage 2
+	// Eyes
+	show_debug_message("Insanity: Stage 2")
+	sanityStage = 2;
+}
+if (timeLeft/60 <= 10 && sanityStage == 2)
+{
+	// Stage 3
+	// Fast Heart Beat
+	show_debug_message("Insanity: Stage 3")
+	sanityStage = 3;
+}
+if (timeLeft/60 <= 5 && sanityStage == 3)
+{
+	// Stage 4
+	// Panik
+	show_debug_message("Insanity: Stage 4")
+	sanityStage = 4;
+}
