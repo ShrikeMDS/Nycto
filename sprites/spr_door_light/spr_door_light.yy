@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Room Sprites",
-    "path": "folders/Sprites/Room Sprites.yy",
+    "name": "Objects",
+    "path": "folders/Sprites/Room Sprites/Objects.yy",
   },
 }

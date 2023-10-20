@@ -46,3 +46,10 @@ TransformAnim = [12, 17];
 
 // All Anim States
 animStates = [idleUpAnim, idleRightAnim, idleLeftAnim, idleDownAnim, walkUpAnim, walkRightAnim, walkLeftAnim, walkDownAnim, TransformAnim];
+
+
+//////////////////////
+// Key Prompts
+//////////////////////
+keyPromptE = false;
+keyPromptSpace = false;

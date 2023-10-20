@@ -15,37 +15,29 @@ Hcolliding = false
 Vcolliding = false
 
 // X
-if (place_meeting(x + obj_playerChar.hspd, y, obj_wallBase))
+if (place_meeting(x + obj_playerChar.hspd, y, obj_collisionBlock))
 {
 	Hcolliding = true;	
 }
-if (place_meeting(x + obj_playerChar.hspd, y, obj_wallFront))
+if (place_meeting(x + obj_playerChar.hspd, y, obj_bed))
 {
 	Hcolliding = true;	
 }
-if (place_meeting(x + obj_playerChar.hspd, y, obj_wallSide))
-{
-	Hcolliding = true;	
-}
-if (place_meeting(x + obj_playerChar.hspd, y, obj_door_light) && obj_door_light.active)
+if (place_meeting(x + obj_playerChar.hspd, y, obj_door) && obj_door.active)
 {
 	Hcolliding = true;	
 }
 
 // Y
-if (place_meeting(x, y + obj_playerChar.vspd, obj_wallBase))
+if (place_meeting(x, y + obj_playerChar.vspd, obj_collisionBlock))
 {
 	Vcolliding = true;	
 }
-if (place_meeting(x, y + obj_playerChar.vspd, obj_wallFront))
+if (place_meeting(x, y + obj_playerChar.vspd, obj_bed))
 {
 	Vcolliding = true;	
 }
-if (place_meeting(x, y + obj_playerChar.vspd, obj_wallSide))
-{
-	Vcolliding = true;	
-}
-if (place_meeting(x, y + obj_playerChar.vspd, obj_door_light) && obj_door_light.active)
+if (place_meeting(x, y + obj_playerChar.vspd, obj_door) && obj_door.active)
 {
 	Vcolliding = true;	
 }
@@ -60,17 +52,5 @@ if (!Vcolliding) // Y
 	obj_playerChar.y += obj_playerChar.vspd;
 } else {show_debug_message("Y Collision")}
 
-if (obj_playerChar.shiftStatus)
-{
-	image_xscale = 1.5;
-	image_yscale = 1.5;
-	// Set to player Location
-	x = obj_playerChar.x;
-	y = obj_playerChar.y-48;
-} else {
-	image_xscale = 1;
-	image_yscale = 1;	
-	// Set to player Location
-	x = obj_playerChar.x;
-	y = obj_playerChar.y-32;
-}
+x = obj_playerChar.x;
+y = obj_playerChar.y-48;

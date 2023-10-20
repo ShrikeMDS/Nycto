@@ -73,9 +73,11 @@ if keyboard_check(ord("S")) vspd = 3
 // Swap Status
 if keyboard_check_pressed(vk_space) && shiftStatus
 {
-	shifting = true;
+	shifting = false;
 	shiftStatus = false;
 	show_debug_message("Shift Status: False");
+	obj_fadeIn.image_alpha = 1;
+	sprite_assign(spr_playerBase, spr_playerChar);
 }
 else if keyboard_check_pressed(vk_space) && !shiftStatus
 {
@@ -102,7 +104,6 @@ if (shifting && !shiftAnimTimer <= 0)
 if (shiftAnimTimer <=0)
 {
 	if (shiftStatus) sprite_assign(spr_playerBase, spr_playerMon);
-	if !(shiftStatus) sprite_assign(spr_playerBase, spr_playerChar);
 	shiftAnimTimer = 1*60;
 	shifting = false;
 }
@@ -144,4 +145,14 @@ if (timeLeft/60 <= 5 && sanityStage == 3)
 	// Panik
 	show_debug_message("Insanity: Stage 4")
 	sanityStage = 4;
+}
+
+
+////////////////////
+// Camera
+////////////////////
+
+if (room == rm_hub)
+{
+	camera_set_view_pos(view_camera[0], x- (view_wport[0]/2), y - (view_hport[0]/2));
 }
