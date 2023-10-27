@@ -4,7 +4,7 @@
 shiftStatus = false;
 shiftAnimTimer = 1*60;
 shifting = false;
-timeLeft = 60*60; // first number is time in seconds
+timeLeft = 30*60; // first number is time in seconds
 sanityStage = 0;
 movement = true; // allow player movement
 

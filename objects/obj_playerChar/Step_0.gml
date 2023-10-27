@@ -118,28 +118,28 @@ if (shiftStatus && timeLeft != 0)
 	}
 }
 
-if (timeLeft/60 <= 40 && sanityStage == 0)
+if (timeLeft/60 <= 25 && sanityStage == 1)
 {
 	// Stage 1
 	// Slow Heart Beat
 	show_debug_message("Insanity: Stage 1")
 	sanityStage = 1;
 }
-if (timeLeft/60 <= 20 && sanityStage == 1)
+if (timeLeft/60 <= 15 && sanityStage == 2)
 {
 	// Stage 2
 	// Eyes
 	show_debug_message("Insanity: Stage 2")
 	sanityStage = 2;
 }
-if (timeLeft/60 <= 10 && sanityStage == 2)
+if (timeLeft/60 <= 10 && sanityStage == 3)
 {
 	// Stage 3
 	// Fast Heart Beat
 	show_debug_message("Insanity: Stage 3")
 	sanityStage = 3;
 }
-if (timeLeft/60 <= 5 && sanityStage == 3)
+if (timeLeft/60 <= 5 && sanityStage == 4)
 {
 	// Stage 4
 	// Panik

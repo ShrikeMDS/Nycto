@@ -19,7 +19,7 @@ if (global.debugMode)
 	draw_text(90, 70, playerInventory[3]);
 	draw_text(10, 70, "Key 4:");
 }
-if (sanityStage == 2)
+if (sanityStage == 3)
 {
 	draw_sprite(spr_killTrigger, 0, 10, 10);
 }
