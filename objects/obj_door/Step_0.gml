@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (room == rm_hub)
+if (room == rm_hub && active)
 {
 	image_index = 1;
 	image_alpha = 1;
@@ -23,12 +23,12 @@ if (room == rm_hub)
 		{
 			show_debug_message("Door Opened")
 			active = false;
-			visible = false;
+			image_index = 3;
 		}
 	} 
 }
 
-if (room == rm_level2)
+if (room == rm_level2 && active)
 {
 	image_index = 0;
 	image_alpha = 1;
@@ -49,7 +49,7 @@ if (room == rm_level2)
 		{
 			show_debug_message("Door Opened")
 			active = false;
-			visible = false;
+			image_index = 2;
 		}
 	} 
 }

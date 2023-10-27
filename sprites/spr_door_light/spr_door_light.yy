@@ -30,6 +30,8 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8875ac8-8a5c-4277-91ec-d5452339be91",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3610a38-2e6d-48c9-9d79-99eb0e55cef5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9fca3b92-9259-44f0-854f-b524b834bf4c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0292a2b1-ddc9-490c-bf76-fe78b5d2050e",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -41,13 +43,15 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"05959d12-f5e3-4e39-94fb-b61169475a8a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8875ac8-8a5c-4277-91ec-d5452339be91","path":"sprites/spr_door_light/spr_door_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a99da359-784c-4bbc-afaf-0f83a2e2832f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3610a38-2e6d-48c9-9d79-99eb0e55cef5","path":"sprites/spr_door_light/spr_door_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"57aa93c8-ee7d-44b0-8a01-19fc02629a25","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9fca3b92-9259-44f0-854f-b524b834bf4c","path":"sprites/spr_door_light/spr_door_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fe2cca02-9ded-4be5-931f-b05a8b1428dc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0292a2b1-ddc9-490c-bf76-fe78b5d2050e","path":"sprites/spr_door_light/spr_door_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
