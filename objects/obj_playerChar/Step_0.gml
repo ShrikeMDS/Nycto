@@ -15,26 +15,26 @@ if (current_frame < min_frame)
 	current_frame = min_frame
 };
 	
-if keyboard_check(ord("W")) // Walk up
+if (keyboard_check(ord("W")) && movement) // Walk up
 {
 	plyDir = 0 + 4;
 	min_frame = animStates[plyDir][0];
 	max_frame = animStates[plyDir][1];
 }
-else if keyboard_check(ord("A")) // Walk Left
+else if (keyboard_check(ord("A")) && movement) // Walk Left
 {
 	plyDir = 1 + 4;
 	min_frame = animStates[plyDir][0];
 	max_frame = animStates[plyDir][1];
 }
 
-else if keyboard_check(ord("D")) // Walk Right
+else if (keyboard_check(ord("D")) && movement) // Walk Right
 {
 	plyDir = 2 + 4;
 	min_frame = animStates[plyDir][0];
 	max_frame = animStates[plyDir][1];
 }
-else if keyboard_check(ord("S")) // Walk Down
+else if (keyboard_check(ord("S")) && movement) // Walk Down
 {
 	plyDir = 3 + 4;
 	min_frame = animStates[plyDir][0];
@@ -62,10 +62,10 @@ if (hspd < 0) hspd += 0.3;
 if (vspd < 0) vspd += 0.3;
 
 // Movement Keybinds
-if keyboard_check(ord("W")) vspd = -3;
-if keyboard_check(ord("D")) hspd = 3; 
-if keyboard_check(ord("A")) hspd = -3;
-if keyboard_check(ord("S")) vspd = 3
+if (keyboard_check(ord("W")) && movement) vspd = -3;
+if (keyboard_check(ord("D")) && movement) hspd = 3; 
+if (keyboard_check(ord("A")) && movement) hspd = -3;
+if (keyboard_check(ord("S")) && movement) vspd = 3
 
 //////////////////////
 // Player Actions
@@ -152,7 +152,5 @@ if (timeLeft/60 <= 5 && sanityStage == 3)
 // Camera
 ////////////////////
 
-if (room == rm_hub)
-{
-	camera_set_view_pos(view_camera[0], x- (view_wport[0]/2), y - (view_hport[0]/2));
-}
+camera_set_view_pos(view_camera[0], x- (view_wport[0]/2), y - (view_hport[0]/2));
+movement = true;

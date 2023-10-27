@@ -4,6 +4,7 @@
 
 if (room == rm_hub)
 {
+	shadowLevel = spr_level1Shadows;
 	if (obj_playerChar.shiftStatus)
 	{
 		if(obj_lamp.active)	frame = 3;
@@ -13,6 +14,19 @@ if (room == rm_hub)
 	{
 		if(obj_lamp.active)	frame = 1;
 		else frame = 0;
+	}
+	
+}
+if (room == rm_level2)
+{
+	shadowLevel = spr_level2Shadows;
+	if (obj_playerChar.shiftStatus)
+	{
+		frame = 1;
+	}
+	else
+	{
+		frame = 0;
 	}
 	
 }

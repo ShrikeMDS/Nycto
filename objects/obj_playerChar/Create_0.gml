@@ -6,6 +6,7 @@ shiftAnimTimer = 1*60;
 shifting = false;
 timeLeft = 60*60; // first number is time in seconds
 sanityStage = 0;
+movement = true; // allow player movement
 
 sprite_assign(spr_playerBase, spr_playerChar); // Set Base Sprite to Human
 
