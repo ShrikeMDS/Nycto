@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shadows",
   "spriteId": {
-    "name": "spr_level1Shadows",
-    "path": "sprites/spr_level1Shadows/spr_level1Shadows.yy",
+    "name": "spr_level3Shadows",
+    "path": "sprites/spr_level3Shadows/spr_level3Shadows.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,8 +26,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

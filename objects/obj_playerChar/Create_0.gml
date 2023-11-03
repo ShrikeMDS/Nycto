@@ -9,6 +9,8 @@ sanityStage = 0;
 movement = true; // allow player movement
 
 sprite_assign(spr_playerBase, spr_playerChar); // Set Base Sprite to Human
+audio_stop_sound(snd_heartbeat);
+audio_stop_sound(snd_heartbeatFast);
 
 // Create Movement
 hspd = 0;

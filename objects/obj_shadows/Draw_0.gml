@@ -3,4 +3,3 @@
 
 
 draw_sprite(shadowLevel, frame, x, y);
-draw_set_alpha(0.93)

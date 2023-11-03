@@ -7,7 +7,7 @@
     "path": "sprites/spr_killTrigger/spr_killTrigger.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -118,12 +118,13 @@ if (shiftStatus && timeLeft != 0)
 	}
 }
 
-if (timeLeft <= 25 * 60 && sanityStage == 0)
+if (timeLeft <= 22 * 60 && sanityStage == 0)
 {
 	// Stage 1
 	// Slow Heart Beat
 	show_debug_message("Insanity: Stage 1")
 	sanityStage = 1;
+	audio_play_sound(snd_heartbeatSingle, 1, false, global.effectVolume)	
 }
 if (timeLeft <= 15 * 60 && sanityStage == 1)
 {
@@ -131,6 +132,7 @@ if (timeLeft <= 15 * 60 && sanityStage == 1)
 	// Eyes
 	show_debug_message("Insanity: Stage 2")
 	sanityStage = 2;
+	audio_play_sound(snd_heartbeat, 1, true, global.effectVolume)
 }
 if (timeLeft <= 10 * 60 && sanityStage == 2)
 {
@@ -139,14 +141,15 @@ if (timeLeft <= 10 * 60 && sanityStage == 2)
 	show_debug_message("Insanity: Stage 3")
 	sanityStage = 3;
 }
-if (timeLeft <= 5 * 60 && sanityStage == 3)
+if (timeLeft <= 6 * 60 && sanityStage == 3)
 {
 	// Stage 4
 	// Panik
 	show_debug_message("Insanity: Stage 4")
 	sanityStage = 4;
+	audio_stop_sound(snd_heartbeat);
+	audio_play_sound(snd_heartbeatFast, 1, true, global.effectVolume)
 }
-
 
 ////////////////////
 // Camera

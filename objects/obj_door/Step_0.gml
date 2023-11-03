@@ -5,7 +5,6 @@
 if (room == rm_hub && active)
 {
 	image_index = 1;
-	image_alpha = 1;
 	playerDistance = false;
 	if (place_meeting(x, y, obj_playerInteractionBox))
 	{
@@ -21,6 +20,7 @@ if (room == rm_hub && active)
 	{
 		if (keyboard_check_pressed(ord("E")) && obj_playerChar.playerInventory[0] == true && playerDistance)
 		{
+			audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume)
 			show_debug_message("Door Opened")
 			active = false;
 			image_index = 3;
@@ -31,19 +31,18 @@ if (room == rm_hub && active)
 if (room == rm_level2 && active)
 {
 	image_index = 0;
-	image_alpha = 1;
 	playerDistance = false;
 	if (place_meeting(x, y, obj_playerInteractionBox))
 	{
 		playerDistance = true;
 	}
 	
-	if (place_meeting(x, y, obj_playerInteractionBox) && active && obj_playerChar.shiftStatus)
+	if (place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
 	{
 		obj_playerChar.keyPromptE = true;
 	}
 	
-	if (obj_playerChar.shiftStatus && active)
+	if (!obj_playerChar.shiftStatus && active)
 	{
 		if (keyboard_check_pressed(ord("E")) && obj_playerChar.playerInventory[0] == true && playerDistance)
 		{
@@ -52,4 +51,9 @@ if (room == rm_level2 && active)
 			image_index = 2;
 		}
 	} 
+}
+
+if (room == rm_level3)
+{
+	active = false;
 }
