@@ -14,6 +14,12 @@ if (global.debugMode)
 Hcolliding = false
 Vcolliding = false
 
+if (!obj_playerChar.movement)
+{
+	Hcolliding = true
+	Vcolliding = true
+}
+
 // X
 if (place_meeting(x + obj_playerChar.hspd, y, obj_collisionBlock))
 {
@@ -53,7 +59,7 @@ if (place_meeting(x + obj_playerChar.hspd, y, obJ_desk))
 	{
 		Hcolliding = true;	
 	}
-	else if (keyboard_check(ord("E")))
+	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obJ_desk.x = obJ_desk.x + obj_playerChar.hspd;
 		Hcolliding = true;
 }
@@ -79,7 +85,7 @@ if (place_meeting(x + obj_playerChar.hspd, y, obj_wardrobe))
 	{
 		Hcolliding = true;	
 	}
-	else if (keyboard_check(ord("E")))
+	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obj_wardrobe.x = obj_wardrobe.x + obj_playerChar.hspd;
 		Hcolliding = true;
 }
@@ -123,7 +129,7 @@ if (place_meeting(x, y + obj_playerChar.vspd, obJ_desk))
 	{
 		Vcolliding = true;	
 	}
-	else if (keyboard_check(ord("E")))
+	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obJ_desk.y = obJ_desk.y + obj_playerChar.vspd;
 	Vcolliding = true;	
 }
@@ -145,7 +151,7 @@ if (place_meeting(x, y + obj_playerChar.vspd, obj_wardrobe))
 	{
 		Vcolliding = true;	
 	}
-	else if (keyboard_check(ord("E")))
+	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obj_wardrobe.y = obj_wardrobe.y + obj_playerChar.vspd;
 	Vcolliding = true;	
 }

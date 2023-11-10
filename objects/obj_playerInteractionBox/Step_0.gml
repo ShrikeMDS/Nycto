@@ -12,5 +12,5 @@ if (global.debugMode)
 
 
 x = obj_playerChar.x;
-y = obj_playerChar.y-128;
+y = obj_playerChar.y-116;
 

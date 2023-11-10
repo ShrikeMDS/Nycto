@@ -40,12 +40,12 @@ idleRightAnim = [1, 1];
 idleLeftAnim = [2, 2];
 idleDownAnim = [3, 3];
 // Walk
-walkUpAnim = [4, 6];
-walkRightAnim = [6, 8];
-walkLeftAnim = [8, 10];
-walkDownAnim = [10, 12];
+walkUpAnim = [16, 21];
+walkRightAnim = [23, 27];
+walkLeftAnim = [10, 15];
+walkDownAnim = [4, 9];
 // Actions
-TransformAnim = [12, 17];
+TransformAnim = [0, 0];
 
 // All Anim States
 animStates = [idleUpAnim, idleRightAnim, idleLeftAnim, idleDownAnim, walkUpAnim, walkRightAnim, walkLeftAnim, walkDownAnim, TransformAnim];

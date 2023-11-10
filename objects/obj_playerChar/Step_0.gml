@@ -56,16 +56,16 @@ else
 // Player Movement
 //////////////////////
 // Slow down
-if (hspd > 0) hspd -= 0.3;
-if (vspd > 0) vspd -= 0.3;
-if (hspd < 0) hspd += 0.3;
-if (vspd < 0) vspd += 0.3;
+if (hspd > 0) hspd -= 0.25;
+if (vspd > 0) vspd -= 0.25;
+if (hspd < 0) hspd += 0.25;
+if (vspd < 0) vspd += 0.25;
 
 // Movement Keybinds
-if (keyboard_check(ord("W")) && movement) vspd = -3;
-if (keyboard_check(ord("D")) && movement) hspd = 3; 
-if (keyboard_check(ord("A")) && movement) hspd = -3;
-if (keyboard_check(ord("S")) && movement) vspd = 3
+if (keyboard_check(ord("W")) && movement) vspd = -2;
+if (keyboard_check(ord("D")) && movement) hspd = 2;
+if (keyboard_check(ord("A")) && movement) hspd = -2;
+if (keyboard_check(ord("S")) && movement) vspd = 2;
 
 //////////////////////
 // Player Actions
