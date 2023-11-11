@@ -54,3 +54,16 @@ if (room == rm_level3)
 		}
 	}
 }
+if (room == rm_level4)
+{
+	shadowLevel = spr_level4Shadows;
+	if (obj_playerChar.shiftStatus)
+	{
+		frame = 1;
+	}
+	else
+	{
+		frame = 0;
+	}
+	
+}
