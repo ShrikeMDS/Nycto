@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_level3Shadows",
-    "path": "sprites/spr_level3Shadows/spr_level3Shadows.yy",
+    "name": "spr_level4Shadows",
+    "path": "sprites/spr_level4Shadows/spr_level4Shadows.yy",
   },
   "spriteMaskId": null,
   "visible": true,

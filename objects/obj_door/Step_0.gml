@@ -57,3 +57,7 @@ if (room == rm_level3)
 {
 	active = false;
 }
+if (room == rm_level4)
+{
+	active = false;
+}

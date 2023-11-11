@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_rugSquare",
+    "path": "sprites/spr_rugSquare/spr_rugSquare.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
