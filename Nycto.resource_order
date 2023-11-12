@@ -1,8 +1,10 @@
 {
   "FolderOrderSettings": [
     {"name":"Level4","order":1,"path":"folders/Sprites/Room Sprites/Levels/Level4.yy",},
+    {"name":"Level5","order":2,"path":"folders/Sprites/Room Sprites/Levels/Level5.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_trapdoor","order":12,"path":"objects/obj_trapdoor/obj_trapdoor.yy",},
     {"name":"obj_chaseKillShadow","order":2,"path":"objects/obj_chaseKillShadow/obj_chaseKillShadow.yy",},
     {"name":"spr_door_light","order":1,"path":"sprites/spr_door_light/spr_door_light.yy",},
     {"name":"obj_winTrigger","order":4,"path":"objects/obj_winTrigger/obj_winTrigger.yy",},
@@ -11,6 +13,7 @@
     {"name":"spr_sliderMusic","order":4,"path":"sprites/spr_sliderMusic/spr_sliderMusic.yy",},
     {"name":"obj_effectSliderUp","order":2,"path":"objects/obj_effectSliderUp/obj_effectSliderUp.yy",},
     {"name":"spr_roomHubBase","order":1,"path":"sprites/spr_roomHubBase/spr_roomHubBase.yy",},
+    {"name":"rm_level5","order":5,"path":"rooms/rm_level5/rm_level5.yy",},
     {"name":"obj_buttonDebug","order":3,"path":"objects/obj_buttonDebug/obj_buttonDebug.yy",},
     {"name":"spr_sanityStage4","order":3,"path":"sprites/spr_sanityStage4/spr_sanityStage4.yy",},
     {"name":"obj_buttonOptions","order":2,"path":"objects/obj_buttonOptions/obj_buttonOptions.yy",},
@@ -43,6 +46,7 @@
     {"name":"spr_sanityStage0","order":4,"path":"sprites/spr_sanityStage0/spr_sanityStage0.yy",},
     {"name":"obj_bookshelf","order":9,"path":"objects/obj_bookshelf/obj_bookshelf.yy",},
     {"name":"spr_room3Base","order":1,"path":"sprites/spr_room3Base/spr_room3Base.yy",},
+    {"name":"spr_portrait","order":21,"path":"sprites/spr_portrait/spr_portrait.yy",},
     {"name":"spr_trunk","order":16,"path":"sprites/spr_trunk/spr_trunk.yy",},
     {"name":"obj_rug","order":3,"path":"objects/obj_rug/obj_rug.yy",},
     {"name":"spr_room2Base","order":1,"path":"sprites/spr_room2Base/spr_room2Base.yy",},
@@ -73,9 +77,11 @@
     {"name":"rm_chase","order":3,"path":"rooms/rm_chase/rm_chase.yy",},
     {"name":"obj_window","order":6,"path":"objects/obj_window/obj_window.yy",},
     {"name":"spr_room4Base","order":1,"path":"sprites/spr_room4Base/spr_room4Base.yy",},
+    {"name":"obj_portrait","order":13,"path":"objects/obj_portrait/obj_portrait.yy",},
     {"name":"spr_playerMon","order":7,"path":"sprites/spr_playerMon/spr_playerMon.yy",},
     {"name":"spr_playerHitBox","order":2,"path":"sprites/spr_playerHitBox/spr_playerHitBox.yy",},
     {"name":"obj_Teleport","order":4,"path":"objects/obj_Teleport/obj_Teleport.yy",},
+    {"name":"spr_room5Base","order":1,"path":"sprites/spr_room5Base/spr_room5Base.yy",},
     {"name":"spr_buttonDebug","order":3,"path":"sprites/spr_buttonDebug/spr_buttonDebug.yy",},
     {"name":"spr_rugCircle","order":15,"path":"sprites/spr_rugCircle/spr_rugCircle.yy",},
     {"name":"obj_chairBig","order":11,"path":"objects/obj_chairBig/obj_chairBig.yy",},

@@ -24,3 +24,4 @@ if (obj_playerChar.sanityStage == 4)
 frame += 6/60
 if (frame >=  4)
 	frame = 0
+
