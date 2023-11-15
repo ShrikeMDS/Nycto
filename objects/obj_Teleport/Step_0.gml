@@ -7,3 +7,9 @@ if (room == rm_level3)
 	placementLocation1 = [1018, 305]
 	placementLocation2 = [1821, 381]
 }
+
+if (room == rm_level6)
+{
+	placementLocation1 = [1530, 420]
+	placementLocation2 = [440, 420]
+}
