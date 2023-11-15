@@ -195,10 +195,10 @@
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_hub","path":"rooms/rm_hub/rm_hub.yy",},},
     {"roomId":{"name":"rm_level6","path":"rooms/rm_level6/rm_level6.yy",},},
     {"roomId":{"name":"rm_level5","path":"rooms/rm_level5/rm_level5.yy",},},
     {"roomId":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
-    {"roomId":{"name":"rm_hub","path":"rooms/rm_hub/rm_hub.yy",},},
     {"roomId":{"name":"rm_chase","path":"rooms/rm_chase/rm_chase.yy",},},
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
