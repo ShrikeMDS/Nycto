@@ -3,12 +3,10 @@
 
 arraysAreEqual(playerInput, puzzleSoultion);
 
+visible = false;	
+
 if (active)
 {
 	obj_controller.cursorStatus = 1;
 	visible = true;
-}
-else
-{
-	visible = false;	
 }

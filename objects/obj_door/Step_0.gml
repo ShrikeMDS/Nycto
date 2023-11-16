@@ -74,43 +74,45 @@ if (room == rm_level2 && active)
 		}
 	} 
 }
-if (room == rm_level3 && x == 982)
-{
-	active = false;
-}
-if (room == rm_level3 && x == 1783)
-{
-	active = false;
-}
 
-if (room == rm_level3 && x != 982 && x != 1783)
+if (room == rm_level3)
 {
-	playerDistance = false;
-	if (place_meeting(x, y, obj_playerInteractionBox))
-	{
-		playerDistance = true;
-	}
-	
-	if (place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
-	{
-		obj_playerChar.keyPromptE = true;
-	}
-	
-	if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved != true)
-	{
-		obj_dialPuzzle.visible = true;
-	}
-	
-	if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved == true)
-	{
-		if (keyboard_check_pressed(ord("E")) && playerDistance)
-		{
-			audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume)
-			show_debug_message("Door Opened")
-			active = false;
-			image_index = 2;
-		}
-	} 
+    if (id != 100010)
+    {
+        active = false;
+    }
+    else
+    {
+        playerDistance = false;
+        if (place_meeting(x, y, obj_playerInteractionBox))
+        {
+            playerDistance = true;
+        }
+
+        if (place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
+        {
+            obj_playerChar.keyPromptE = true;
+        }
+
+        if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved != true)
+        {
+            if (keyboard_check_pressed(ord("E")) && playerDistance)
+            {
+                obj_dialPuzzle.active = true;
+            }
+        }
+
+        if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved == true)
+        {
+            if (keyboard_check_pressed(ord("E")) && playerDistance)
+            {
+                audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume);
+                show_debug_message("Door Opened");
+                active = false;
+                image_index = 2;
+            }
+        }
+    }
 }
 if (room == rm_level4 && obj_lever.active)
 {

@@ -155,8 +155,10 @@ if (shiftAnimTimer <=0)
 if (timeLeft <= 0)
 {
 	sprite_assign(spr_playerBase, spr_playerDeathAnim);
+	audio_play_sound(snd_death, global.effectVolume, false)
 	min_frame = 0
 	max_frame = 13
+	current_frame = 0;
 	deathTimer--;
 }
 
