@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Nycto",
   "resources": [
+    {"id":{"name":"obj_goodend","path":"objects/obj_goodend/obj_goodend.yy",},"order":1,},
     {"id":{"name":"obj_trapdoor","path":"objects/obj_trapdoor/obj_trapdoor.yy",},"order":0,},
     {"id":{"name":"obj_chaseKillShadow","path":"objects/obj_chaseKillShadow/obj_chaseKillShadow.yy",},"order":0,},
     {"id":{"name":"spr_door_light","path":"sprites/spr_door_light/spr_door_light.yy",},"order":0,},
@@ -106,6 +107,7 @@
     {"id":{"name":"snd_heartbeat","path":"sounds/snd_heartbeat/snd_heartbeat.yy",},"order":0,},
     {"id":{"name":"spr_trapdoor","path":"sprites/spr_trapdoor/spr_trapdoor.yy",},"order":0,},
     {"id":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},"order":0,},
+    {"id":{"name":"spr_whiteScreem","path":"sprites/spr_whiteScreem/spr_whiteScreem.yy",},"order":4,},
     {"id":{"name":"snd_ambient","path":"sounds/snd_ambient/snd_ambient.yy",},"order":3,},
     {"id":{"name":"spr_plus","path":"sprites/spr_plus/spr_plus.yy",},"order":0,},
     {"id":{"name":"obj_chair","path":"objects/obj_chair/obj_chair.yy",},"order":12,},
@@ -170,6 +172,12 @@
     "children": [],
   },
   "RoomOrderNodes": [
+<<<<<<< Updated upstream
+=======
+    {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
+    {"roomId":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
+    {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
+>>>>>>> Stashed changes
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"roomId":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
