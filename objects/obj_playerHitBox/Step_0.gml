@@ -37,6 +37,10 @@ if (place_meeting(x + obj_playerChar.hspd, y, obj_door) && obj_door.active)
 {
 	Hcolliding = true;	
 }
+if (place_meeting(x + obj_playerChar.hspd, y, obj_door2) && obj_door2.active)
+{
+	Hcolliding = true;	
+}
 if (place_meeting(x + obj_playerChar.hspd, y, obJ_desk))
 {
 	if (place_meeting(obJ_desk.x + obj_playerChar.hspd, obJ_desk.y, obj_collisionBlock))
@@ -56,6 +60,10 @@ if (place_meeting(x + obj_playerChar.hspd, y, obJ_desk))
 		Hcolliding = true;	
 	}
 	else if (place_meeting(obJ_desk.x + obj_playerChar.hspd, obJ_desk.y, obj_door) && obj_door.active)
+	{
+		Hcolliding = true;	
+	}
+	else if (place_meeting(obJ_desk.x + obj_playerChar.hspd, obJ_desk.y, obj_door2) && obj_door2.active)
 	{
 		Hcolliding = true;	
 	}
@@ -85,6 +93,10 @@ if (place_meeting(x + obj_playerChar.hspd, y, obj_wardrobe))
 	{
 		Hcolliding = true;	
 	}
+	else if (place_meeting(obj_wardrobe.x + obj_playerChar.hspd, obj_wardrobe.y, obj_door2) && obj_door2.active)
+	{
+		Hcolliding = true;	
+	}
 	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obj_wardrobe.x = obj_wardrobe.x + obj_playerChar.hspd;
 		Hcolliding = true;
@@ -104,6 +116,10 @@ if (place_meeting(x, y + obj_playerChar.vspd, obj_bed))
 	Vcolliding = true;	
 }
 if (place_meeting(x, y + obj_playerChar.vspd, obj_door) && obj_door.active)
+{
+	Vcolliding = true;	
+}
+if (place_meeting(x, y + obj_playerChar.vspd, obj_door2) && obj_door2.active)
 {
 	Vcolliding = true;	
 }
@@ -129,6 +145,10 @@ if (place_meeting(x, y + obj_playerChar.vspd, obJ_desk))
 	{
 		Vcolliding = true;	
 	}
+	else if (place_meeting(obJ_desk.x, obJ_desk.y + obj_playerChar.vspd, obj_door2) && obj_door2.active)
+	{
+		Vcolliding = true;	
+	}
 	else if (keyboard_check(ord("E")) && obj_playerChar.shiftStatus)
 		obJ_desk.y = obJ_desk.y + obj_playerChar.vspd;
 	Vcolliding = true;	
@@ -148,6 +168,10 @@ if (place_meeting(x, y + obj_playerChar.vspd, obj_wardrobe))
 		Vcolliding = true;	
 	}
 	else if (place_meeting(obj_wardrobe.x, obj_wardrobe.y + obj_playerChar.vspd, obj_door) && obj_door.active)
+	{
+		Vcolliding = true;	
+	}
+	else if (place_meeting(obj_wardrobe.x, obj_wardrobe.y + obj_playerChar.vspd, obj_door2) && obj_door2.active)
 	{
 		Vcolliding = true;	
 	}

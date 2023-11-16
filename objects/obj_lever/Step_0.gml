@@ -27,6 +27,7 @@ if (room == rm_level4)
 {
 	if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_playerInteractionBox) && !active && !obj_playerChar.shiftStatus)
 	{
+		obj_playerChar.playerInventory[1] = true;
 		audio_play_sound(snd_leverPull, 1, false, global.effectVolume)
 		show_debug_message("Level Interact: Active")
 		image_index = 1;
@@ -34,6 +35,7 @@ if (room == rm_level4)
 	}
 	else if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
 	{
+		obj_playerChar.playerInventory[1] = false;
 		audio_play_sound(snd_leverPull, 1, false, global.effectVolume)
 		show_debug_message("Level Interact: Inactive")
 		image_index = 0;

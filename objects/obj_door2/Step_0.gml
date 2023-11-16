@@ -28,7 +28,7 @@ if (room == rm_hub && active)
 	} 
 }
 
-if (room == rm_level2 && active)
+if (room == rm_level4 && active)
 {
 	image_index = 0;
 	playerDistance = false;
@@ -55,40 +55,6 @@ if (room == rm_level2 && active)
 }
 
 if (room == rm_level3)
-{
-	active = false;
-}
-if (room == rm_level4 && obj_lever.active)
-{
-    image_index = 0;
-    playerDistance = false;
-    if (place_meeting(x, y, obj_playerInteractionBox))
-    {
-        playerDistance = true;
-    }
-
-    if (place_meeting(x, y, obj_playerInteractionBox) && obj_lever.active && obj_playerChar.shiftStatus)
-    {
-        obj_playerChar.keyPromptE = true;
-    }
-
-    if (obj_playerChar.shiftStatus && obj_lever.active)
-    {
-        if (keyboard_check_pressed(ord("E")) && obj_playerChar.playerInventory[1] == true && playerDistance)
-        {
-            audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume)
-            show_debug_message("Door Opened")
-            obj_lever.active = false; // Update lever state to inactive
-            visible = false;
-			active = false;
-        }
-    }
-}
-if (room == rm_level5)
-{
-	active = false;
-}
-if (room == rm_level6)
 {
 	active = false;
 }
