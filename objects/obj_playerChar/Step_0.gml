@@ -149,6 +149,20 @@ if (shiftAnimTimer <=0)
 	max_frame = animStatesMon[0][1];
 }
 
+///////////////////////
+// Player Death
+///////////////////////
+if (timeLeft <= 0)
+{
+	sprite_assign(spr_playerBase, spr_playerDeathAnim);
+	min_frame = 0
+	max_frame = 13
+	deathTimer--;
+}
+
+if (deathTimer <= 0)
+	room_restart()
+
 // Shift Timer
 if (shiftStatus && timeLeft != 0)
 {

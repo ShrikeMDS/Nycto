@@ -4,7 +4,6 @@
 puzzleSoultion = [2, 2, 2, 2];
 solved = false;
 active = true;
-visible = false;
 if (room == rm_level3)
 {
 	puzzleSoultion = [2, 4, 6, 3];
@@ -34,3 +33,4 @@ function arraysAreEqual(arr1, arr2)
 
     return true;
 }
+visible = false;

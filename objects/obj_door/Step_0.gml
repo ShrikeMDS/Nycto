@@ -74,8 +74,16 @@ if (room == rm_level2 && active)
 		}
 	} 
 }
+if (room == rm_level3 && x == 982)
+{
+	active = false;
+}
+if (room == rm_level3 && x == 1783)
+{
+	active = false;
+}
 
-if (room == rm_level3 && x != 982)
+if (room == rm_level3 && x != 982 && x != 1783)
 {
 	playerDistance = false;
 	if (place_meeting(x, y, obj_playerInteractionBox))
