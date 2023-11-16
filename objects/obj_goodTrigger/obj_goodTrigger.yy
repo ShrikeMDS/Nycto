@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_goodend",
+  "name": "obj_goodTrigger",
   "spriteId": {
-    "name": "spr_whiteScreem",
-    "path": "sprites/spr_whiteScreem/spr_whiteScreem.yy",
+    "name": "spr_winTrigger",
+    "path": "sprites/spr_winTrigger/spr_winTrigger.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,14 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_playerHitBox","path":"objects/obj_playerHitBox/obj_playerHitBox.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Level Specific",
+    "path": "folders/Objects/Room Objects/Level Specific.yy",
   },
 }

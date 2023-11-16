@@ -20,6 +20,9 @@ vspd = 0;
 // keys
 //                 Key 1, Key 2, Key 3, Key 4
 playerInventory = [false, false, false, false];
+// eyes
+//                         eye 1, eye 2, eye 3, eye 4, eye 5
+global.specialInventory = [false, false, false, false, false];
 
 spawnPosX = x;
 spawnPosY = y;
