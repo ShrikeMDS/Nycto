@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Props",
-    "path": "folders/Objects/Room Objects/Props.yy",
+    "name": "Nycto",
+    "path": "Nycto.yyp",
   },
 }
