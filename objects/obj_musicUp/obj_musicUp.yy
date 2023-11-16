@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_musicUp",
   "spriteId": {
-    "name": "spr_sliderArrow",
-    "path": "sprites/spr_sliderArrow/spr_sliderArrow.yy",
+    "name": "spr_plus",
+    "path": "sprites/spr_plus/spr_plus.yy",
   },
   "solid": false,
   "visible": true,

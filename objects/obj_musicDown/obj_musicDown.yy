@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_musicDown",
   "spriteId": {
-    "name": "spr_sliderArrow",
-    "path": "sprites/spr_sliderArrow/spr_sliderArrow.yy",
+    "name": "spr_minus",
+    "path": "sprites/spr_minus/spr_minus.yy",
   },
   "solid": false,
   "visible": true,
