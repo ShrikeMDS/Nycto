@@ -77,40 +77,34 @@ if (room == rm_level2 && active)
 
 if (room == rm_level3)
 {
-    if (id != 100010)
+    playerDistance = false;
+    if (place_meeting(x, y, obj_playerInteractionBox))
     {
-        active = false;
+        playerDistance = true;
     }
-    else
+
+    if (place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
     {
-        playerDistance = false;
-        if (place_meeting(x, y, obj_playerInteractionBox))
-        {
-            playerDistance = true;
-        }
+        obj_playerChar.keyPromptE = true;
+    }
 
-        if (place_meeting(x, y, obj_playerInteractionBox) && active && !obj_playerChar.shiftStatus)
+    if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved != true)
+    {
+        if (keyboard_check_pressed(ord("E")) && playerDistance)
         {
-            obj_playerChar.keyPromptE = true;
+            obj_dialPuzzle.active = true;
+				show_debug_message("Puzzle Acitve");
         }
+    }
 
-        if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved != true)
+    if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved == true)
+    {
+        if (keyboard_check_pressed(ord("E")) && playerDistance)
         {
-            if (keyboard_check_pressed(ord("E")) && playerDistance)
-            {
-                obj_dialPuzzle.active = true;
-            }
-        }
-
-        if (!obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved == true)
-        {
-            if (keyboard_check_pressed(ord("E")) && playerDistance)
-            {
-                audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume);
-                show_debug_message("Door Opened");
-                active = false;
-                image_index = 2;
-            }
+            audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume);
+            show_debug_message("Door Opened");
+            active = false;
+            image_index = 6;
         }
     }
 }

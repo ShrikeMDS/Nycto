@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.debugMode = true;
+global.debugMode = false;
 global.effectVolume = 1;
 global.musicVolume = 1;
 
