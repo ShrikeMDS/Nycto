@@ -104,7 +104,7 @@ if (room == rm_level3)
             audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume);
             show_debug_message("Door Opened");
             active = false;
-            image_index = 5;
+            image_index = 6;
         }
     }
 }

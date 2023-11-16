@@ -28,11 +28,6 @@ if (room == rm_hub && active)
 	} 
 }
 
-if (room == rm_level3)
-{
-	active = false;	
-}
-
 if (room == rm_level4 && active)
 {
 	image_index = 0;
