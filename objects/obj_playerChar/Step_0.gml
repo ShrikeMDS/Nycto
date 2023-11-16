@@ -15,41 +15,80 @@ if (current_frame < min_frame)
 	current_frame = min_frame
 };
 	
-if (keyboard_check(ord("W")) && movement) // Walk up
+if (!shiftStatus)
 {
-	plyDir = 0 + 4;
-	min_frame = animStates[plyDir][0];
-	max_frame = animStates[plyDir][1];
-}
-else if (keyboard_check(ord("A")) && movement) // Walk Left
-{
-	plyDir = 1 + 4;
-	min_frame = animStates[plyDir][0];
-	max_frame = animStates[plyDir][1];
-}
+	if (keyboard_check(ord("W")) && movement) // Walk up
+	{
+		plyDir = 0 + 4;
+		min_frame = animStates[plyDir][0];
+		max_frame = animStates[plyDir][1];
+	}
+	else if (keyboard_check(ord("A")) && movement) // Walk Left
+	{
+		plyDir = 1 + 4;
+		min_frame = animStates[plyDir][0];
+		max_frame = animStates[plyDir][1];
+	}
 
-else if (keyboard_check(ord("D")) && movement) // Walk Right
-{
-	plyDir = 2 + 4;
-	min_frame = animStates[plyDir][0];
-	max_frame = animStates[plyDir][1];
+	else if (keyboard_check(ord("D")) && movement) // Walk Right
+	{
+		plyDir = 2 + 4;
+		min_frame = animStates[plyDir][0];
+		max_frame = animStates[plyDir][1];
+	}
+	else if (keyboard_check(ord("S")) && movement) // Walk Down
+	{
+		plyDir = 3 + 4;
+		min_frame = animStates[plyDir][0];
+		max_frame = animStates[plyDir][1];
+	} 
+	else
+	{
+		if (plyDir >= 4)
+		{
+			plyDir -= 4;
+		}
+		min_frame = animStates[plyDir][0];
+		max_frame = animStates[plyDir][1];
+	}
 }
-else if (keyboard_check(ord("S")) && movement) // Walk Down
-{
-	plyDir = 3 + 4;
-	min_frame = animStates[plyDir][0];
-	max_frame = animStates[plyDir][1];
-} 
 else
 {
-	if (plyDir >= 4)
+	if (keyboard_check(ord("W")) && movement) // Walk up
 	{
-		plyDir -= 4;
+		plyDir = 0 + 4;
+		min_frame = animStatesMon[plyDir][0];
+		max_frame = animStatesMon[plyDir][1];
 	}
-	min_frame = animStates[plyDir][0];
-	max_frame = animStates[plyDir][1];
-}
+	else if (keyboard_check(ord("A")) && movement) // Walk Left
+	{
+		plyDir = 1 + 4;
+		min_frame = animStatesMon[plyDir][0];
+		max_frame = animStatesMon[plyDir][1];
+	}
 
+	else if (keyboard_check(ord("D")) && movement) // Walk Right
+	{
+		plyDir = 2 + 4;
+		min_frame = animStatesMon[plyDir][0];
+		max_frame = animStatesMon[plyDir][1];
+	}
+	else if (keyboard_check(ord("S")) && movement) // Walk Down
+	{
+		plyDir = 3 + 4;
+		min_frame = animStatesMon[plyDir][0];
+		max_frame = animStatesMon[plyDir][1];
+	} 
+	else
+	{
+		if (plyDir >= 4)
+		{
+			plyDir -= 4;
+		}
+		min_frame = animStatesMon[plyDir][0];
+		max_frame = animStatesMon[plyDir][1];
+	}	
+}
 
 
 //////////////////////
@@ -104,8 +143,10 @@ if (shifting && !shiftAnimTimer <= 0)
 if (shiftAnimTimer <=0)
 {
 	if (shiftStatus) sprite_assign(spr_playerBase, spr_playerMon);
-	shiftAnimTimer = 1*60;
+	shiftAnimTimer = 100;
 	shifting = false;
+	min_frame = animStatesMon[0][0];
+	max_frame = animStatesMon[0][1];
 }
 
 // Shift Timer

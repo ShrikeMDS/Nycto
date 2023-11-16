@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 shiftStatus = false;
-shiftAnimTimer = 1*60;
+shiftAnimTimer = 100;
 shifting = false;
 timeLeft = 30*60; // first number is time in seconds
 sanityStage = 0;
@@ -45,10 +45,23 @@ walkRightAnim = [23, 27];
 walkLeftAnim = [10, 15];
 walkDownAnim = [4, 9];
 // Actions
-TransformAnim = [0, 0];
+TransformAnim = [28, 38];
 
 // All Anim States
-animStates = [idleUpAnim, idleRightAnim, idleLeftAnim, idleDownAnim, walkUpAnim, walkRightAnim, walkLeftAnim, walkDownAnim, TransformAnim];
+animStates = [idleLeftAnim, idleDownAnim, idleRightAnim, idleUpAnim, walkUpAnim, walkRightAnim, walkLeftAnim, walkDownAnim, TransformAnim];
+
+idleUpAnimMon = [0, 0];
+idleRightAnimMon = [1, 1];
+idleLeftAnimMon = [2, 2];
+idleDownAnimMon = [3, 3];
+// Walk
+walkUpAnimMon = [34, 43];
+walkRightAnimMon = [14, 23];
+walkLeftAnimMon = [24, 33];
+walkDownAnimMon = [4, 13];
+
+// All Anim States
+animStatesMon = [idleLeftAnimMon, idleDownAnimMon, idleRightAnimMon, idleUpAnimMon, walkUpAnimMon, walkLeftAnimMon, walkRightAnimMon, walkDownAnimMon];
 
 
 //////////////////////

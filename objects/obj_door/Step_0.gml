@@ -46,6 +46,7 @@ if (room == rm_level2 && active)
 	{
 		if (keyboard_check_pressed(ord("E")) && obj_playerChar.playerInventory[0] == true && playerDistance)
 		{
+			audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume)
 			show_debug_message("Door Opened")
 			active = false;
 			image_index = 2;

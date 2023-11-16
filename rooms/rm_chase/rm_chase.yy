@@ -34,6 +34,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1436E7F8","properties":[],"isDnd":false,"objectId":{"name":"obj_collisionBlock","path":"objects/obj_collisionBlock/obj_collisionBlock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":11.965628,"scaleY":4.6812596,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":417.05014,"y":288.1498,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2719A1E6","properties":[],"isDnd":false,"objectId":{"name":"obj_collisionBlock","path":"objects/obj_collisionBlock/obj_collisionBlock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":100.05938,"scaleY":4.6812596,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2200.3438,"y":348.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28DC1F44","properties":[],"isDnd":false,"objectId":{"name":"obj_collisionBlock","path":"objects/obj_collisionBlock/obj_collisionBlock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":99.73907,"scaleY":0.93125963,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2205.9863,"y":623.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F43A720","properties":[],"isDnd":false,"objectId":{"name":"obj_winTrigger","path":"objects/obj_winTrigger/obj_winTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3744.0,"y":480.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"SpecialBackground","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17037AEB","properties":[],"isDnd":false,"objectId":{"name":"obj_chaseHallway","path":"objects/obj_chaseHallway/obj_chaseHallway.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -60,6 +61,7 @@
     {"name":"inst_4AC5E8FC","path":"rooms/rm_chase/rm_chase.yy",},
     {"name":"inst_2719A1E6","path":"rooms/rm_chase/rm_chase.yy",},
     {"name":"inst_28DC1F44","path":"rooms/rm_chase/rm_chase.yy",},
+    {"name":"inst_3F43A720","path":"rooms/rm_chase/rm_chase.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

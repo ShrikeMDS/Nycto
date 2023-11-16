@@ -7,7 +7,7 @@ global.musicVolume = 1;
 
 
 
-//                     Room Hub, Lv1,   Lv2,   Lv3,   Lv4
-global.roomCompleted = [false,   false, false, false, false]
+//                     Room Hub,  Lv2,   Lv3,   Lv4,   Lv5,   lv6,  chase
+global.roomCompleted = [false,   false, false, false, false, false, false]
 
 audio_play_sound(snd_gameMusic, 1, true)
