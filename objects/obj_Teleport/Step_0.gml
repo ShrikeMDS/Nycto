@@ -10,8 +10,8 @@ if (room == rm_level3)
 
 if (room == rm_level5)
 {
-	placementLocation1 = [930, 850]
-	placementLocation2 = [1245, 420]
+	placementLocation1 = [930-70, 833+50]
+	placementLocation2 = [1253-70, 562+50]
 }
 
 if (room == rm_level6)

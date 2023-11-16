@@ -8,6 +8,10 @@ if (room == rm_level3)
 {
 	puzzleSoultion = [2, 4, 6, 3];
 }
+if (room == rm_level5)
+{
+	puzzleSoultion = [1, 3, 4, 2];
+}
 
 playerInput = [1, 1, 1, 1];
 

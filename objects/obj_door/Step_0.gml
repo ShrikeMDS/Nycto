@@ -136,7 +136,36 @@ if (room == rm_level4 && obj_lever.active)
 }
 if (room == rm_level5)
 {
-	active = false;
+    playerDistance = false;
+    if (place_meeting(x, y, obj_playerInteractionBox))
+    {
+        playerDistance = true;
+    }
+
+    if (place_meeting(x, y, obj_playerInteractionBox) && active && obj_playerChar.shiftStatus)
+    {
+        obj_playerChar.keyPromptE = true;
+    }
+
+    if (obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved != true)
+    {
+        if (keyboard_check_pressed(ord("E")) && playerDistance)
+        {
+            obj_dialPuzzle.active = true;
+				show_debug_message("Puzzle Acitve");
+        }
+    }
+
+    if (obj_playerChar.shiftStatus && active && obj_dialPuzzle.solved == true)
+    {
+        if (keyboard_check_pressed(ord("E")) && playerDistance)
+        {
+            audio_play_sound(snd_doorUnlock, 1, false, global.effectVolume);
+            show_debug_message("Door Opened");
+            active = false;
+            image_index = 5;
+        }
+    }
 }
 if (room == rm_level6)
 {
