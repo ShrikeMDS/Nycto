@@ -32,6 +32,6 @@ if (room == rm_chase)
 }	
 if (room == rm_goodEnd)
 {
-	audio_stop_sound(snd_gameMusic)	
+	audio_stop_sound(snd_chase)	
 	audio_play_sound(Ending_Tomorrow,  global.musicVolume, true)	
 }

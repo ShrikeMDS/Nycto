@@ -174,6 +174,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_chase","path":"rooms/rm_chase/rm_chase.yy",},},
+    {"roomId":{"name":"rm_goodEnd","path":"rooms/rm_goodEnd/rm_goodEnd.yy",},},
     {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
@@ -181,9 +183,7 @@
     {"roomId":{"name":"rm_hub","path":"rooms/rm_hub/rm_hub.yy",},},
     {"roomId":{"name":"rm_level6","path":"rooms/rm_level6/rm_level6.yy",},},
     {"roomId":{"name":"rm_level5","path":"rooms/rm_level5/rm_level5.yy",},},
-    {"roomId":{"name":"rm_chase","path":"rooms/rm_chase/rm_chase.yy",},},
     {"roomId":{"name":"rm_options","path":"rooms/rm_options/rm_options.yy",},},
-    {"roomId":{"name":"rm_goodEnd","path":"rooms/rm_goodEnd/rm_goodEnd.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":0,},
