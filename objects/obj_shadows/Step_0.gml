@@ -65,7 +65,14 @@ if (room == rm_level4)
 	{
 		frame = 0;
 	}
-	
+	if (obj_playerChar.playerInventory[0] == true && obj_playerChar.shiftStatus)
+	{
+		frame = 3;
+	}
+	else if (obj_playerChar.playerInventory[0] == true)
+	{
+		frame = 2;
+	}
 }
 if (room == rm_level5)
 {
