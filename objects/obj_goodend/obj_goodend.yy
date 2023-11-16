@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_goodend",
+  "name": "obj_goodEnd",
   "spriteId": {
     "name": "spr_whiteScreem",
     "path": "sprites/spr_whiteScreem/spr_whiteScreem.yy",
