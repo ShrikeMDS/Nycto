@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Ending_Tomorrow",
+  "name": "snd_endingMusic",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Ending_Tomorrow.wav",
+  "soundFile": "snd_endingMusic.wav",
   "duration": 13.782063,
   "parent": {
     "name": "Sounds",

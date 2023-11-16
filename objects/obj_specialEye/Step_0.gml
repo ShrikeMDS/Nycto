@@ -56,17 +56,3 @@ if (room == rm_level5)
 		visible = false;
 	} 
 }
-if (room == rm_level6)
-{
-	if (place_meeting(x, y, obj_playerInteractionBox))
-	{
-		obj_playerChar.keyPromptE = true;
-	}
-	
-	if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_playerInteractionBox))
-	{
-		global.specialInventory[4] = true;
-		show_debug_message("eye Gained")
-		visible = false;
-	} 
-}

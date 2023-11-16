@@ -28,10 +28,11 @@ if (global.musicVolume > 1)
 if (room == rm_chase)
 {
 	audio_stop_sound(snd_gameMusic)	
-	audio_play_sound(snd_chase,  global.musicVolume, true)
+	audio_play_sound(snd_chase, global.musicVolume, true)
 }	
 if (room == rm_goodEnd)
 {
 	audio_stop_sound(snd_chase)	
-	audio_play_sound(Ending_Tomorrow,  global.musicVolume, true)	
+	audio_stop_sound(snd_gameMusic)	
+	audio_play_sound(snd_endingMusic, global.musicVolume, true)	
 }

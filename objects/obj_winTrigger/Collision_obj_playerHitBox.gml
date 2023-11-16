@@ -22,13 +22,8 @@ if (room == rm_level4)
 }
 if (room == rm_level5)
 {
-	room_goto(rm_level6);
-	global.roomCompleted[4] = true;
-}
-if (room == rm_level6)
-{
 	room_goto(rm_chase);
-	global.roomCompleted[5] = true;
+	global.roomCompleted[4] = true;
 }
 if (room == rm_chase)
 {
