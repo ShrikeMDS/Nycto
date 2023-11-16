@@ -3,7 +3,7 @@
 
 puzzleSoultion = [2, 2, 2, 2];
 solved = false;
-active = true;
+active = false;
 if (room == rm_level3)
 {
 	puzzleSoultion = [2, 4, 6, 3];
