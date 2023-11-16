@@ -29,6 +29,20 @@ if (keyPromptSpace)
 {
 	draw_sprite(spr_keyPrompt_Space, 0, 1920/2, 900)
 }
-
+if (keyPromptExit)
+{
+	draw_sprite(spr_keyPrompt_Eexit, 0, 1920/2, 900)
+}
+if (keyPromptStart)
+{
+	draw_sprite(spr_keyPrompt_Estart, 0, 1920/2, 900)
+}
+if (keyPromptOption)
+{
+	draw_sprite(spr_keyPrompt_Eoptions, 0, 1920/2, 900)
+}
+keyPromptOption = false;
+keyPromptStart = false;
+keyPromptExit = false;
 keyPromptE = false;
 keyPromptSpace = false;

@@ -1,7 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+if (room == rm_mainMenu)
+{
+	playerDistance = false;
+	if (place_meeting(x, y, obj_playerInteractionBox))
+	{
+		playerDistance = true;
+	}
+	
+	if (place_meeting(x, y, obj_playerInteractionBox))
+	{
+		obj_playerChar.keyPromptExit = true;
+		if (obj_playerChar.keyPromptExit = true)
+		{
+			obj_playerChar.keyPromptStart = false;
+		}
+	}
+	
+	if (keyboard_check_pressed(ord("E")) && playerDistance)
+	{
+		game_end(0);
+	}
+}
 if (room == rm_hub && active)
 {
 	image_index = 1;

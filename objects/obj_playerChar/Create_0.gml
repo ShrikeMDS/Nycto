@@ -67,5 +67,8 @@ animStatesMon = [idleLeftAnimMon, idleDownAnimMon, idleRightAnimMon, idleUpAnimM
 //////////////////////
 // Key Prompts
 //////////////////////
+keyPromptOption = false;
+keyPromptStart = false;
+keyPromptExit = false;
 keyPromptE = false;
 keyPromptSpace = false;
